@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Family Book</title>
+</head>
+
+<body>
+    <style>
+  body{
+       background-color: aquamarine;
+       text-align: center;
+     }   
+     #fam_book {
+        width: 400px;
+        height: 450px;
+     }
+     #Next {
+        height: 35px;
+        width: 60px;
+        background-color: blueviolet;
+        border-radius: 75px;
+     }
+     #fam_name {
+         font-weight: bold;
+     }
+   </style>
+
+   <h1>My Family Book</h1>
+
+<img id="fam_book" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkthONp-rr8mgBn17E6atAxWSGzA3lGlwmnw&usqp=CAU">
+<br>
+<br>
+<p id="fam_name">Family</p>
+<br>
+<br>
+<button id="Next" type="button" onclick="nextslide()">Next</button>
+<script>
+var names= [
+"Brian Waugh & Nancy Charrois-Waugh",
+"Kaitlynn",
+"Taylor-Brooke",
+"Chase",
+"Olivia",
+"Maui"
+];
+
+var image= [
+"Mom & Dad.JPG",
+"Kaitlynn.jpg",
+"Taylor.JPG",
+"Chase.jpg",
+"Olivia.jpg",
+"Maui.JPG"
+];
+
+var i = 0;
+
+function nextslide(){
+document.getElementById("fam_name").innerHTML = names[i];
+document.getElementById("fam_book").src = image[i];
+i++;
+};
+</script>
+
+</body>
+
+</html>
